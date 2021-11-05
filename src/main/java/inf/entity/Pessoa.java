@@ -48,4 +48,15 @@ public class Pessoa {
     private void setEnderecos(ArrayList<Enderecos> enderecos) {
         this.enderecos = enderecos;
     }
+
+    public Pessoa(String nome, String cpf, String nasc, ArrayList cartao, ArrayList<Enderecos> enderecos) {
+        this.nome = nome;
+        this.cpf = cpf;
+        this.nasc = nasc;
+        this.cartao = cartao;
+        this.enderecos = enderecos;
+    }
+    public Pessoa(){
+    }
+
 }
