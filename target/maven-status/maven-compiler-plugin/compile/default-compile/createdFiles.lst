@@ -1,5 +1,10 @@
+inf\entity\Vendedor.class
+inf\services\RecursoAluno.class
 inf\services\Rest.class
 inf\entity\Aluno.class
 inf\entity\Enderecos.class
-inf\services\RecursoAluno.class
+inf\entity\Carrinho.class
+inf\entity\Compra.class
 inf\entity\Pessoa.class
+inf\entity\Produto.class
+inf\entity\Cliente.class

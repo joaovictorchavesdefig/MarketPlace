@@ -1,6 +1,6 @@
 package inf.entity;
 
-public class Enderecos{
+public class Enderecos {
     private int cep;
     private String estado;
     private String cidade;
