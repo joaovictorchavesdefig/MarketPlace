@@ -4,8 +4,8 @@ import java.util.ArrayList;
 
 public class Cliente extends Pessoa{
     
-    ArrayList <Produto> favoritos;
-    ArrayList <Produto> historico;
+    private ArrayList <Produto> favoritos;
+    private ArrayList <Produto> historico;
     
     public ArrayList <Produto> getFavoritos() {
         return favoritos;

@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class Vendedor extends Pessoa{
     
-    ArrayList <Produto> mercadoria;
+    private ArrayList <Produto> mercadoria;
 
     public ArrayList <Produto> getMercadoria() {
         return mercadoria;

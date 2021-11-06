@@ -4,6 +4,7 @@ inf\services\Rest.class
 inf\entity\Aluno.class
 inf\entity\Enderecos.class
 inf\entity\Carrinho.class
+inf\entity\Compra.class
 inf\entity\Pessoa.class
 inf\entity\Produto.class
 inf\entity\Cliente.class

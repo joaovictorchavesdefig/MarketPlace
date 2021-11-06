@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class Carrinho {
     
-    ArrayList <Produto> itens;
+    private ArrayList <Produto> itens;
     
     public ArrayList <Produto> getItens() {
         return itens;

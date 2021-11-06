@@ -1,14 +1,22 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-
 package inf.entity;
+import inf.entity.Produto;
+import java.util.ArrayList;
 
-/**
- *
- * @author User
- */
 public class Compra {
+    
+    private ArrayList <Produto> itens;
+    
+    public ArrayList <Produto> getItens() {
+        return itens;
+    }
 
+    public void setItens(ArrayList <Produto> itens) {
+        this.itens = itens;
+    }
+    
+    public Compra(ArrayList <Produto> itens) {
+        this.itens = itens;
+    }
+    public Compra(){
+    }
 }
