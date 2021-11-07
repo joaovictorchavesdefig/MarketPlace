@@ -17,11 +17,11 @@ public class Pessoa {
         this.nome = nome;
     }
 
-    private String getCpf() {
+    public String getCpf() {
         return cpf;
     }
 
-    private void setCpf(String cpf) {
+    public void setCpf(String cpf) {
         this.cpf = cpf;
     }
 
@@ -33,19 +33,19 @@ public class Pessoa {
         this.nasc = nasc;
     }
 
-    private ArrayList getCartao() {
+    public ArrayList getCartao() {
         return cartao;
     }
 
-    private void setCartao(ArrayList cartao) {
+    public void setCartao(ArrayList cartao) {
         this.cartao = cartao;
     }
 
-    private ArrayList<Enderecos> getEnderecos() {
+    public ArrayList<Enderecos> getEnderecos() {
         return enderecos;
     }
 
-    private void setEnderecos(ArrayList<Enderecos> enderecos) {
+    public void setEnderecos(ArrayList<Enderecos> enderecos) {
         this.enderecos = enderecos;
     }
 
