@@ -3,7 +3,7 @@ package inf.entity;
 public class Produto {
     private String nome;
     private int id;
-    private float preco;
+    private double preco;
     private int armazem; //Número do local do produto Ex: 1,2,3...
     private String descricao;
     
@@ -15,39 +15,39 @@ public class Produto {
         this.nome = nome;
     }
 
-    private int getId() {
+    public int getId() {
         return id;
     }
 
-    private void setId(int id) {
+    public void setId(int id) {
         this.id = id;
     }
 
-    public float getPreco() {
+    public double getPreco() {
         return preco;
     }
 
-    public void setPreco(float preco) {
+    public void setPreco(double preco) {
         this.preco = preco;
     }
 
-    private int getArmazem() {
+    public int getArmazem() {
         return armazem;
     }
 
-    private void setArmazem(int armazem) {
+    public void setArmazem(int armazem) {
         this.armazem = armazem;
     }
 
-    private String getDescricao() {
+    public String getDescricao() {
         return descricao;
     }
 
-    private void setDescricao(String descricao) {
+    public void setDescricao(String descricao) {
         this.descricao = descricao;
     }
 
-    public Produto(String nome, int id, float preco, int armazem, String descricao) {
+    public Produto(String nome, int id, double preco, int armazem, String descricao) {
         this.nome = nome;
         this.id = id;
         this.preco = preco;
