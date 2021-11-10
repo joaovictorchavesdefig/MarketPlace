@@ -13,6 +13,14 @@ public class Carrinho {
     public void setItens(ArrayList <Produto> itens) {
         this.itens = itens;
     }
+
+    public void setItem(Produto item) {
+        this.itens.add(item);
+    }
+
+    public void removeItem(Produto item) {
+        this.itens.remove(item);
+    }
     
     public Carrinho(ArrayList <Produto> itens) {
         this.itens = itens;

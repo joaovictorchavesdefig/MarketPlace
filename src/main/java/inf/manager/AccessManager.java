@@ -58,5 +58,26 @@ public class AccessManager {
         ProdutoDao produtoDAO = new ProdutoDao();
         return produtoDAO.getProduto(conn, id);
     }
+    
+    public boolean insertProduto(Produto produto) throws Exception{
+        DBConn dbConn = new DBConn();
+        Connection conn = dbConn.getConnection();
+        ProdutoDao produtoDAO = new ProdutoDao();
+        return produtoDAO.insertProduto(conn, produto);
+    }
+    
+    public boolean delProduto(int id) throws Exception{
+        DBConn dbConn = new DBConn();
+        Connection conn = dbConn.getConnection();
+        ProdutoDao produtoDAO = new ProdutoDao();
+        return produtoDAO.delProduto(conn, id);
+    }
+    
+    public boolean updateProduto(Produto produto) throws Exception{
+        DBConn dbConn = new DBConn();
+        Connection conn = dbConn.getConnection();
+        ProdutoDao produtoDAO = new ProdutoDao();
+        return produtoDAO.updateProduto(conn, produto);
+    }
 
 }
