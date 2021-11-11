@@ -27,10 +27,10 @@ public class CarrinhoDao {
         return true;
     }
 
-    public static boolean excluiCarrinho(Produto produto){
+    public static boolean excluiCarrinho(int id){
         for(Produto p : produtos){
-            if (p.getId() == produto.getId()){
-                produtos.remove(produto);
+            if (p.getId() == id){
+                produtos.remove(p);
                 return true;    
             }
         }
