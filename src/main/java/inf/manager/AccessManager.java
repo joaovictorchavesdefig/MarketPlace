@@ -3,6 +3,7 @@ package inf.manager;
 import inf.dao.DBConn;
 import inf.dao.AlunoDao;
 import inf.dao.ProdutoDao;
+import inf.dao.CompraDao;
 import inf.entity.Aluno;
 import inf.entity.Produto;
 import java.sql.Connection;
@@ -78,6 +79,20 @@ public class AccessManager {
         Connection conn = dbConn.getConnection();
         ProdutoDao produtoDAO = new ProdutoDao();
         return produtoDAO.updateProduto(conn, produto);
+    }
+
+    public ArrayList<Produto> getComprados() throws Exception{
+        DBConn dbConn = new DBConn();
+        Connection conn = dbConn.getConnection();
+        CompraDao compraDAO = new CompraDao();
+        return compraDAO.getComprados(conn);
+    }
+
+    public double RealizarCompra() throws Exception{
+        DBConn dbConn = new DBConn();
+        Connection conn = dbConn.getConnection();
+        CompraDao compraDAO = new CompraDao();
+        return compraDAO.RealizarCompra(conn);
     }
 
 }

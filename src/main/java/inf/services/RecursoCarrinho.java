@@ -43,10 +43,10 @@ public class RecursoCarrinho {
     }
 
     @DELETE
-    @Path("/del")
-    @Consumes("application/json")
-    @Produces({MediaType.APPLICATION_JSON})
-    public Response deletaCarrinho(Produto produto){
+    @Path("/{id}")
+    @Consumes({MediaType.TEXT_PLAIN})
+    @Produces({MediaType.TEXT_PLAIN})
+    public Response deletaCarrinho(@PathParam("id") String id){
         if (new CarrinhoDao().excluiCarrinho(Integer.parseInt(id)))
                 return Response.ok().build();
         return Response.status(Response.Status.NOT_FOUND).build();
